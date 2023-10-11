@@ -2,7 +2,7 @@
 
 void onFailedInput();
 
-int problem1()
+void problem1()
 {
     int x, y;
     std::cout << "Sum 2 whole numbers. Please type 2 numbers." << std::endl;
@@ -13,7 +13,7 @@ int problem1()
     {
         onFailedInput();
 
-        return problem1();
+        return;
     }
 
     if ((std::cin.good() && INT_MAX - x > y))

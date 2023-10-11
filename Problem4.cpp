@@ -2,10 +2,10 @@
 
 void onFailedInput();
 
-int problem4()
+void problem4()
 {
     int a, b, c, d, min1, min2, max;
-    std::cout << "Maximum of two minimums (max[min(a,b), min(c,d)]). Please type 4 numbers." << std::endl;
+    std::cout << "Maximum of two minimums (max[min(a,b), min(c,d)]).\nPlease type 4 numbers: ";
 
     std::cin >> a >> b >> c >> d;
 
@@ -13,7 +13,7 @@ int problem4()
     {
         onFailedInput();
 
-        return problem4();
+        return;
     }
 
     min1 = a;
@@ -23,7 +23,7 @@ int problem4()
     }
 
     min2 = c;
-    if (c < c)
+    if (d < c)
     {
         min2 = d;
     }

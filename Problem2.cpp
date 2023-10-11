@@ -2,18 +2,27 @@
 
 void onFailedInput();
 
-int problem2()
+void problem2()
 {
     int a, b;
     std::cout << "Comparing 2 whole numbers. Please type 2 numbers." << std::endl;
 
-    std::cin >> a >> b;
+    std::cin >> a;
 
     if (std::cin.fail())
     {
         onFailedInput();
 
-        return problem2();
+        return;
+    }
+
+    std::cin >> b;
+
+    if (std::cin.fail())
+    {
+        onFailedInput();
+
+        return;
     }
 
     if (a > b)

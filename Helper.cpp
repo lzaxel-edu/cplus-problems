@@ -3,9 +3,11 @@
 
 int onceMore()
 {
-    int onceMore = 0;
+    int onceMore;
     std::cout << "Once more? (1-yes, 0-no)" << std::endl;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cin >> onceMore;
+
     if (onceMore != 1)
     {
         return 0;

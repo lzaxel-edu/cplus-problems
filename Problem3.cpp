@@ -2,7 +2,7 @@
 
 void onFailedInput();
 
-int problem3()
+void problem3()
 {
     int a, b, c, max;
     std::cout << "Max of 3 whole numbers. Please type 3 numbers." << std::endl;
@@ -12,8 +12,7 @@ int problem3()
     if (std::cin.fail())
     {
         onFailedInput();
-
-        return problem3();
+        return;
     }
 
     max = a;

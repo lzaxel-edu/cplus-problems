@@ -1,13 +1,13 @@
 ﻿#include <iostream>
-int problem1();
-int problem2();
-int problem3();
-int problem4();
-int problem5();
+void problem1();
+void problem2();
+void problem3();
+void problem4();
+void problem5();
 int onceMore();
 
 int main() {
-	problem2();
+	problem5();
 	if (onceMore())
 	{
 		main();

@@ -2,10 +2,10 @@
 
 void onFailedInput();
 
-int problem5()
+void problem5()
 {
     int a;
-    std::cout << "Check if number is even and two-digit. Please type a number." << std::endl;
+    std::cout << "Check if number is even and two-digit.\nPlease type a number: ";
 
     std::cin >> a;
 
@@ -13,7 +13,7 @@ int problem5()
     {
         onFailedInput();
 
-        return problem5();
+        return;
     }
 
     if ((a % 2 == 0) && ((a >= 10 && a < 100) || (a >= -99 && a <= -10)))
