@@ -1,7 +1,6 @@
 #include <iostream>
 
 void onFailedInput();
-int onceMore();
 
 int problem5()
 {
@@ -24,11 +23,5 @@ int problem5()
     else
     {
         std::cout << "No" << std::endl;
-    }
-
-
-    if (onceMore())
-    {
-        problem5();
     }
 }

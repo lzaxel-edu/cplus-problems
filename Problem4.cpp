@@ -1,7 +1,6 @@
 #include <iostream>
 
 void onFailedInput();
-int onceMore();
 
 int problem4()
 {
@@ -36,9 +35,4 @@ int problem4()
     }
 
     std::cout << "Maximum is " << max << std::endl;
-
-    if (onceMore())
-    {
-        problem4();
-    }
 }

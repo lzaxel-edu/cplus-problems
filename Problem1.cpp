@@ -1,7 +1,6 @@
 #include <iostream>
 
 void onFailedInput();
-int onceMore();
 
 int problem1()
 {
@@ -17,10 +16,13 @@ int problem1()
         return problem1();
     }
 
-    printf("%d+%d=%d\n", x, y, x + y);
-
-    if (onceMore())
+    if ((std::cin.good() && INT_MAX - x > y))
     {
-        problem1();
+        printf("%d+%d=%d\n", x, y, x + y);
     }
+    else
+    {
+        std::cout << "Sorry, result is too great\n";
+    }
+
 }

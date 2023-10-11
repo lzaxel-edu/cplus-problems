@@ -4,7 +4,12 @@ int problem2();
 int problem3();
 int problem4();
 int problem5();
+int onceMore();
 
 int main() {
-	problem5();
+	problem2();
+	if (onceMore())
+	{
+		main();
+	}
 }

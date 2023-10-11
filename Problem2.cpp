@@ -1,7 +1,6 @@
 #include <iostream>
 
 void onFailedInput();
-int onceMore();
 
 int problem2()
 {
@@ -28,10 +27,5 @@ int problem2()
     else
     {
         printf("%d = %d (a = b)\n", a, b);
-    }
-
-    if (onceMore())
-    {
-        problem2();
     }
 }
