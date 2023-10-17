@@ -13,4 +13,9 @@ add_executable(cplus_problems
         Problem2.cpp
         Problem3.cpp
         Problem4.cpp
-        Problem5.cpp)
+        Problem5.cpp
+        Problem6.cpp
+        Problem7.cpp
+        Problem8.cpp
+        Problem9.cpp
+        Problem10.cpp)
