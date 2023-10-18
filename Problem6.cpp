@@ -27,9 +27,7 @@ void problem6()
         onFailedInput();
         return;
     }
-    digit = abs(digit);
-
-    if (digit > 9)
+    if (digit > 9 || digit < 0)
     {
         std::cout << "Invalid digit (must be in [0, 9])\n";
         return;

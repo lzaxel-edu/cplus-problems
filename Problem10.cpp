@@ -33,13 +33,13 @@ void problem10()
         std::cout << "Yes, dec\n";
     } else if (d1 >= d2 && d2 >= d3 && d3 >= d4)
     {
-        std::cout << "Yes, not dec\n";
+        std::cout << "Yes, not inc\n";
     } else if (d1 < d2 && d2 < d3 && d3 < d4)
     {
         std::cout << "Yes, inc\n";
     } else if (d1 <= d2 && d2 <= d3 && d3 <= d4)
     {
-        std::cout << "Yes, not inc\n";
+        std::cout << "Yes, not dec\n";
     } else
     {
         std::cout << "No\n";
