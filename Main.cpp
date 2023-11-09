@@ -13,9 +13,12 @@ void problem9();
 void problem10();
 void problem11();
 void problem12();
+void problem13();
+void problem14();
+void problem15();
 
 int main() {
-	problem12();
+	problem15();
 	if (onceMore())
 	{
 		main();

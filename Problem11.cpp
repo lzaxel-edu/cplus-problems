@@ -37,10 +37,10 @@ void problem11()
         minY = b;
     }
 
-    if ((minX + minY) * 2 >= (x + y) * 2)
+    if ((minX < x && minY < y) || (minX < y && minY < x))
     {
-        std::cout << "NO\n";
-    } else {
         std::cout << "YES\n";
+    } else {
+        std::cout << "NO\n";
     }
 }
