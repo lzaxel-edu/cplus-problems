@@ -4,7 +4,7 @@
 void onFailedInput();
 
 void problem15() {
-    int input, m, cm, converted;
+    int input, m, cm;
     double mm;
 
     std::cout << "Convert inches to metric system.\nPlease type inches (whole numbers, more than 0).\n";
@@ -16,12 +16,19 @@ void problem15() {
         return;
     }
 
-    converted = input * 254;
+    if (input <= 0)
+    {
+        std::cout << "Input must be more than 0" << std::endl;
+        return;
+    }
 
-    mm = converted % 1000 / 10.0;
-    cm = converted - mm;
+    mm = input * 25.4;
+    cm = mm / 10;
+    m = cm / 100;
+    mm = mm - cm * 10;
+    cm = cm - m * 100;
 
-    std::cout << "mm=" << mm << " " << "cm=" << cm << std::endl;
+    std::cout << input << " inches = " << mm <<  "mm " << cm << "cm " << m << "m" << std::endl;
 
 }
 

@@ -18,9 +18,11 @@ void problem14();
 void problem15();
 
 int main() {
-	problem15();
-	if (onceMore())
-	{
-		main();
-	}
+    bool oneMore = true;
+
+    while (oneMore)
+    {
+        problem15();
+        oneMore = onceMore();
+    }
 }
