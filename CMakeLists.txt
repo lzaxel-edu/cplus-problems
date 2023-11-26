@@ -9,7 +9,6 @@ add_executable(cplus_problems
         Helper.cpp
         Main.cpp
         Problem1.cpp
-        Problem1.h
         Problem2.cpp
         Problem3.cpp
         Problem4.cpp
@@ -20,4 +19,12 @@ add_executable(cplus_problems
         Problem9.cpp
         Problem10.cpp
         Problem11.cpp
-        Problem12.cpp Problem13.cpp Problem13.cpp Problem14.cpp Problem14.cpp Problem15.cpp)
+        Problem12.cpp
+        Problem13.cpp
+        Problem14.cpp
+        Problem15.cpp
+        Problem16.cpp
+        Problem17.cpp
+        Problem18.cpp
+        Problem19.cpp
+        Problem20.cpp)
