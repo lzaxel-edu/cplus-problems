@@ -4,8 +4,8 @@ void onFailedInput();
 
 void problem18()
 {
-    int x, y;
-    double result;
+    int x;
+    double y,  result;
 
     std::cout << "Please enter unit of measures (1-km, 2-m, 3-dm, 4-cm, 5-mm):";
     std::cin >> x;
@@ -33,23 +33,26 @@ void problem18()
     {
         case 1:
             result = y * 1000;
+            std::cout << y << "km" << "=" << result << "m\n";
             break;
         case 2:
             result = y * 1;
+            std::cout << y << "m" << "=" << result << "m\n";
             break;
         case 3:
             result = y * 0.1;
+            std::cout << y << "dm" << "=" << result << "m\n";
             break;
         case 4:
             result = y * 0.01;
+            std::cout << y << "cm" << "=" << result << "m\n";
             break;
         case 5:
             result = y * 0.001;
+            std::cout << y << "mm" << "=" << result << "m\n";
             break;
         default:
             std::cout << "Invalid unit type\n";
             return;
     }
-
-    std::cout << result << " metres\n";
 }

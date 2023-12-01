@@ -4,7 +4,8 @@ void onFailedInput();
 void problem19()
 {
     int k;
-    std::cout << "Please enter age count [1;200]:";
+    std::cout << "Program for printing age\n";
+    std::cout << "Please enter age [1;200]:";
 
     std::cin >> k;
     if (std::cin.fail())
@@ -19,7 +20,7 @@ void problem19()
         return;
     }
 
-    if (k >= 100 && (k%100 >= 11 && k%100 <= 14))
+    if (k%100 >= 11 && k%100 <= 14)
     {
         std::wcout << L"Ему " << k << L" лет\n";
         return;

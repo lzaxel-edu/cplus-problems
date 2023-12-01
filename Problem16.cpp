@@ -19,11 +19,13 @@ void problem16()
         std::cout << "All numbers must be > 0" << std::endl;
         return;
     }
-    if (h > 24) {
-        std::cout << "Hours must be <= 24" << std::endl;
+    if (h >= 24) {
+        std::cout << "Hours must be < 24" << std::endl;
+        return;
     }
-    if (m > 60 || s > 60) {
-        std::cout << "Seconds and Minutes must be <= 60" << std::endl;
+    if (m >= 60 || s >= 60) {
+        std::cout << "Seconds and Minutes must be < 60" << std::endl;
+        return;
     }
 
     std::cout << "Please enter delta time (hours, minutes, seconds):";
@@ -34,7 +36,7 @@ void problem16()
         return;
     }
 
-    if (h < 0 || m < 0 || s < 0) {
+    if (x < 0 || y < 0 || z < 0) {
         std::cout << "All numbers must be > 0" << std::endl;
         return;
     }

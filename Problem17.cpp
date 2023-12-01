@@ -9,12 +9,12 @@ bool checkInputProblem17(int h, int h1, int m, int m1, int s, int s1)
         std::cout << "All numbers must be > 0" << std::endl;
         isOk = false;
     }
-    if (h > 24 || h1 > 24) {
-        std::cout << "Hours must be <= 24" << std::endl;
+    if (h >= 24 || h1 >= 24) {
+        std::cout << "Hours must be < 24" << std::endl;
         isOk = false;
     }
-    if (m > 60 || s > 60 || m1 > 60 || s1 > 60) {
-        std::cout << "Seconds and Minutes must be <= 60" << std::endl;
+    if (m >= 60 || s >= 60 || m1 >= 60 || s1 >= 60) {
+        std::cout << "Seconds and Minutes must be < 60" << std::endl;
         isOk = false;
     }
 
@@ -56,18 +56,15 @@ void problem17() {
     }
 
     int diff;
-    if (interval2 > interval1)
+    if (interval1 < interval2)
     {
         diff = interval2 - interval1;
-        hd = diff / 3600;
-        md = (diff % 3600) / 60;
-        sd = (diff % 3600) % 60;
-    } else
-    {
-        diff = 86400 - interval1 - interval2;
-        hd = diff / 3600;
-        md = (diff % 3600) / 60;
-        sd = (diff % 3600) % 60;
+    } else {
+        diff = 86400 - (interval1 - interval2);
     }
+
+    hd = diff / 3600;
+    md = (diff % 3600) / 60;
+    sd = (diff % 3600) % 60;
     std::cout << "Difference:"<< hd << " hours " << md << " minutes " << sd << " seconds\n";
 }

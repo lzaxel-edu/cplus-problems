@@ -3,7 +3,7 @@ void onFailedInput();
 
 void problem20()
 {
-    int a, b;
+    double a, b;
     double res;
     char operation;
     std::cout << "Enter two numbers:";
