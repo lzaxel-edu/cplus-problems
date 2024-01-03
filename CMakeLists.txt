@@ -27,4 +27,10 @@ add_executable(cplus_problems
         Problem17.cpp
         Problem18.cpp
         Problem19.cpp
-        Problem20.cpp)
+        Problem20.cpp
+        Problem21.cpp
+        Problem22.cpp
+        Problem23.cpp
+        Problem24.cpp
+        Problem25.cpp
+        )
