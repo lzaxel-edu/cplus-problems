@@ -38,4 +38,13 @@ add_executable(cplus_problems
         Problem28.cpp
         Problem29.cpp
         Problem30.cpp
+        Problem31.cpp
+        Problem32.cpp
+        Problem33.cpp
+        Problem34.cpp
+        Problem35.cpp
+        Problem36.cpp
+        Problem37.cpp
+        Problem38.cpp
+        Problem39.cpp
         )

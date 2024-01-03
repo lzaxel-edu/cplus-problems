@@ -31,6 +31,15 @@ void problem27();
 void problem28();
 void problem29();
 void problem30();
+void problem31();
+void problem32();
+void problem33();
+void problem34();
+void problem35();
+void problem36();
+void problem37();
+void problem38();
+void problem39();
 
 int main() {
     setlocale(LC_ALL, "");
@@ -38,7 +47,7 @@ int main() {
 
     while (oneMore)
     {
-        problem30();
+        problem39();
         oneMore = onceMore();
     }
 }
