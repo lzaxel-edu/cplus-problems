@@ -94,42 +94,23 @@ void print_triangle_right_left_inverted(int n)
     }
 }
 
-
-// я уверен шо можно было бахнуть
-// и одним циклом, но это первое чё мне
-// в голову пришло и ваще так не запрещалось
 void print_rhombus(int n)
 {
-    // верхняя половина
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n*2; i++)
     {
         for (int j = 0; j < n*2-1; j++)
         {
-            if (j > n - i - 1 && j < n + i - 1) std::cout << "*";
+            if (
+                (i <= n && j > n - i - 1 && j < n + i - 1) ||
+                (i > n && j >= i-n && j < n*2 - i%n -1)
+                )
+                std::cout << "*";
             else std::cout << " ";
         }
 
         std::cout << "\n";
     }
 
-    // центральная полоска
-    for (int j = 0; j < n*2-1; j++)
-    {
-        std::cout << "*";
-    }
-
-    // нижняя половина
-    std::cout << "\n";
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n*2-1; j++)
-        {
-            if (j > i && j < 2*n-2 - i) std::cout << "*";
-            else std::cout << " ";
-        }
-
-        std::cout << "\n";
-    }
 }
 
 void problem30()
